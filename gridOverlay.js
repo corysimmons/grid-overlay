@@ -1,12 +1,12 @@
 var gridOverlay = function() {
-  $('.grid-overlay').remove();
-  $('.go').each(function(k, v) {
-    $('body').prepend('<div class="grid-overlay" style="width: '+ $(this).width() +'px; left: '+ $(this).position().left +'px" />');
+  $('[grid-overlay]').remove();
+  $('[go]').each(function(k, v) {
+    $('body').prepend('<div grid-overlay style="width: '+ $(this).width() +'px; left: '+ $(this).position().left +'px" />');
   });
   $('[go-parent]').children().each(function(k, v) {
-    $('body').prepend('<div class="grid-overlay" style="width: '+ $(this).width() +'px; left: '+ $(this).position().left +'px" />');
+    $('body').prepend('<div grid-overlay style="width: '+ $(this).width() +'px; left: '+ $(this).position().left +'px" />');
   });
-  $('.grid-overlay').css({
+  $('[grid-overlay]').css({
     background: 'blue',
     position: 'absolute',
     top: 0,
