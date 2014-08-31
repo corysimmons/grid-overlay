@@ -1,0 +1,53 @@
+@import 'reset.css';
+section {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.third,
+.sixth {
+  background: #f00;
+}
+.third {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.3333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.third:before,
+.third:after {
+  content: '';
+  display: table;
+}
+.third:after {
+  clear: both;
+}
+.third:last-child {
+  margin-right: 0%;
+}
+.sixth {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 14.166666666666702%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.sixth:before,
+.sixth:after {
+  content: '';
+  display: table;
+}
+.sixth:after {
+  clear: both;
+}
+.sixth:last-child {
+  margin-right: 0%;
+}
